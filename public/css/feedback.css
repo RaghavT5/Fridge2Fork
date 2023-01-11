@@ -1,0 +1,59 @@
+img {
+	height: 20px;
+	width:20px;
+}
+
+h2{
+	text-align: center;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+.rating {
+	text-align: center;
+}
+.text-area {
+	width:50%;
+	height: 40%;
+	position: relative;
+	left:26%;
+
+}
+
+.emoji-rating {
+	padding:20px;
+}
+
+
+
+.btn {
+	width:80px;
+	position: relative;
+	left:45%;
+	margin-top: 10px;
+}
+
+
+.required-stuff {
+width : 250px;
+height:30px;
+position: relative;
+left:28%;
+display: inline;
+margin:10px;
+}
+.container {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#feedback {
+	border-radius: 1.2rem;
+		background: #ffff;
+		display: flex;
+		flex-flow: column;
+		box-shadow: 0 0 2rem #b4b4b4;
+		z-index: 2;
+}

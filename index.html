@@ -1,0 +1,944 @@
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Fridge2Fork</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+	<script src="https://kit.fontawesome.com/7d6895892a.js" crossorigin="anonymous"></script>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>localStorage.clear();</script>
+
+	<style>
+		body {
+			background-image: url('/images/background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100vw;
+			min-height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<section id="input-wraper">
+
+		<!-- <img class="logo" src="images/logo.png"> -->
+		<h1>Fridge2Fork</h1>
+
+		<p class="headings">Categories</p>
+
+		<div class="container main-grid">
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<div class="category">
+						<button class="btn btn-light" onclick="fruitList()"><img src="images/fruits.svg"
+								class="cat-img"> Fruits</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="vegetableList()"><img src="images/vegetables.svg"
+								class="cat-img"> Vegetables</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="dairyList()"> <img src="images/dairy.svg"
+								class="cat-img"> Dairy</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="meatList()"><img src="images/meat.svg" class="cat-img">
+							Meats</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="grainList()"><img src="images/grain.svg" class="cat-img">
+							Grains</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="spiceList()"> <img src="images/spice.svg"
+								class="cat-img"> Spices</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="sauceList()"> <img src="images/sauces.svg"
+								class="cat-img"> Sauces</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="bakingList()"><img src="images/bake.svg" class="cat-img">
+							Baking</button>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<div class="category">
+						<button class="btn btn-light" onclick="otherList()"> <img src="images/other.svg"
+								class="cat-img"> Other</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- Content for category -->
+
+
+		<aside id="fruits">
+			<ul id="menu">
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Apple</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Pear</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Orange</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Strawberry</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Cherry</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Grape</li>
+					</div>
+
+
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<li class="item">Mango</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Blueberry</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Guava</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item"> Plum</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Banana</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Raspberry</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Apricot</a></li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Grapefruit</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Melon</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Coconut</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Peach</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Avocado</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Mandarin</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Jackfruit</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Papaya</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Kiwi</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Pineapple</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Lime</li>
+					</div>
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+
+		<!-- VEGETABLES -->
+
+
+		<aside id="vegetables">
+			<ul>
+				<div class="row vegetables">
+
+					<div class="col-md-2">
+						<li class="item">Bean</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Capsicum</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Broccoli</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Sprout</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Cabbage</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Carrot</li>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-2">
+						<li class="item">Cauliflower</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Cucumber</a></li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Eggplant</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Garlic</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Celery</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Kale</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Potato</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Onions</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Pumpkin</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Peas</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Corn</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Spinach</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Tomato</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Zucchini</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Yam</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Lettuce</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Mint</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Mushroom</li>
+					</div>
+				</div>
+			</ul>
+
+
+
+
+		</aside>
+		<!-- DAIRY -->
+
+		<aside id="dairy">
+			<ul>
+				<div class="row dairy">
+
+					<div class="col-md-2">
+						<li class="item">Milk</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Yogurt</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Cottage Cheese</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Mozzarella Cheese</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Butter</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Ice Cream</li>
+					</div>
+
+
+				</div>
+
+				<div class="row dairy">
+
+					<div class="col-md-2">
+						<li class="item">Egg</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Cream</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Whipped Cream</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Ghee</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Brie</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Powdered Milk</li>
+					</div>
+
+
+				</div>
+
+			</ul>
+		</aside>
+
+		<!-- MEAT -->
+		<aside id="meat">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Chicken Breast</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Bacon</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Ground Beef</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Sausage</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Beef Steak</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Hot dog</li>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-2">
+						<li class="item">Ham</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Turkey</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Pork</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Salami</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Canned tuna</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Salmon</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Fish fillets</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Sardines</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Cod</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Tilapia</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Peach</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Shrimp</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Crab</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Prawns</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Scallop</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Clam</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Lobster</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Oyster</li>
+					</div>
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+
+		<!-- Grains -->
+
+		<aside id="grain">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Rice</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Brown Rice</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Barley</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Buckwheat</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Bulgur</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Oatmeal</li>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-2">
+						<li class="item">Millets</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Popcorn</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Whole-wheat bread</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Chia</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Quiona</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Chickpeas</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">lentils</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">peanuts</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Mung beans</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Sunflower seed</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Black mustard</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Flax seed</li>
+					</div>
+
+				</div>
+
+
+			</ul>
+		</aside>
+
+
+		<!-- SPICE -->
+
+
+		<aside id="spice">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Cinnamon</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Vanilla</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Paprika</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Garlic Powder</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Oregano</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Chili powder</li>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+					<div class="col-md-2">
+						<li class="item">Cumin</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Red pepper flake</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Thyme</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Onion powder</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Bay leaf</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Sage</li>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Turmeric</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Clove</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Peppercorn</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Taco seasoning</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Vanilla essence</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">nutmeg</li>
+					</div>
+
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+		<!-- SAUCES -->
+		<aside id="sauce">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Mayonnaise</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Ketchup</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Mustard</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Vinegar</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Soy sauce</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Hot sauce</li>
+					</div>
+
+
+				</div>
+
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Salad dressing</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Ranch dressing</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Apple cider vinegar</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Tabasco</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Tahini</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Fish sauce</li>
+					</div>
+
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+
+		<!-- BAKING -->
+
+		<aside id="baking">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Flour</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Bread</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Baking powder</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Baking soda</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Cornstarch</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Rolled oats</li>
+					</div>
+
+
+				</div>
+
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Yeast</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Pancake mix</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Cake mix</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Biscuits</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Yeast</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Salt</li>
+					</div>
+
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+
+		<!-- OTHER -->
+
+		<aside id="other">
+			<ul>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Corn syrup</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Maple syrup</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Artificial sweetner</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Tofu</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Wine</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Beer</li>
+					</div>
+
+
+				</div>
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Rum</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Vodka</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Peanut butter</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Cashew</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Walnut</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Flax</li>
+					</div>
+
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-2">
+						<li class="item">Pistachio</li>
+					</div>
+					<div class="col-md-2">
+						<li class="item">Almond</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Coffee</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Orange juice</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Coke</li>
+					</div>
+
+					<div class="col-md-2">
+						<li class="item">Tea</li>
+					</div>
+
+
+				</div>
+
+
+			</ul>
+
+
+
+		</aside>
+
+
+		<div>
+			<p class="headings">My Ingredients</p>
+			<div id="cart">
+
+
+			</div>
+
+
+			<form action="/" method="post">
+
+				<input id="ingredientInput" type="hidden" name="ingredientName">
+				<!-- <button type="button" onclick="fetchApi()" class="btn btn-warning" id="ingredientSubmit">Find a recipe</button> -->
+
+				<a href="/searchResult.html" target="_blank"><button type="button" onclick="fetchApi()"
+						class="btn btn-warning" id="ingredientSubmit">Find a recipe</button></a>
+
+				<!-- <button type="button" onclick="recipeFetchApi()" class="btn btn-warning" id="ingredientSubmit">Find a recipe</button> -->
+			</form>
+
+
+
+
+
+
+
+
+	</section>
+
+	<script src="./javascript/index.js"></script>
+</body>
+
+</html>
+
+<!-- <li class="item"><a href="#" class="item" id="link3">Orange</li> -->

@@ -1,0 +1,190 @@
+/*	body {
+		background-image: url(/images/background.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100vw;
+		min-height: 100vh;
+		display: flex;
+		justify-content:center;
+		align-items: center;  
+	}
+*/
+	#input-wraper {
+		width: 46rem;
+		max-width: 90vw;
+		min-height: 15rem;
+		border-radius: 1.2rem;
+		background: #ffff;
+		display: flex;
+		flex-flow: column;
+		box-shadow: 0 0 2rem #b4b4b4;
+		padding: 0 2rem 2rem;
+		z-index: 2;
+
+
+	}
+.logo {
+	height: 100px;
+	width:100px;
+
+}
+	h1 {
+		font-family: acme;
+		font-size: 3rem;
+		text-align: left;
+		padding-top: 20px;
+		
+	}
+
+	.headings {
+		font-family: poppins;
+		color: #464646;
+		font-size: 1rem;
+		text-align: left;
+		padding-top: 20px;
+		font-weight: bold;
+	}
+
+	.cat-img {
+		height:40px;
+		width: 40px;
+		margin-bottom: 20px;
+
+	}
+
+	.ingredient-input {
+		padding: 0.8rem;
+		font-size: 1rem;
+		border-radius: .3rem;
+		border-color: #c4c4c4;
+		background-color: white;
+		line-height: 1.5;
+		width: 80%;
+	}
+	.btn-warning {
+		background: #ffc107;
+		color: black;
+		padding: .50rem 1.6rem;
+		font-weight: 600;
+		font-size: 1rem;
+		margin-top: 10px;
+	}
+
+.btn-light{
+	font-size:12px;
+	font-family: poppins;
+	font-weight: bold;
+}
+
+		
+	.category {
+	
+		margin:5px;
+		text-align: center;
+	}
+
+	img {
+		margin-top: 10px;
+	}
+	ul li {
+	  
+	    text-align: center;    
+	    display: inline;
+	    padding: 3px;
+
+
+	  }
+
+
+	.item {
+	
+	border-style: solid;
+	border:1px;
+	padding:1px;
+	font-size: 0.7rem;
+	font-family: poppins;
+	text-decoration: none;
+	background-color: white;
+
+	
+
+	}
+li {
+	color: black;
+	font-family: poppins;
+	text-decoration: none;
+	background-color: white;
+	font-size: 10px;
+	
+
+
+}	
+li:hover {
+	background-color:#ffc107; 
+	padding: 5px;
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+
+
+
+.fa-plus {
+	margin-right: 3px;
+}	
+
+.ingredient-name:hover {
+	background-color:#ffc107; 
+	padding: 5px;
+}
+
+#fruits {
+	display: none;
+}
+
+#vegetables {
+	display: none;
+}
+
+#dairy {
+	display: none;
+}
+
+#meat{
+	display: none;
+}
+
+#grain {
+	display: none;
+}
+
+#spice {
+	display: none;
+}
+#sauce {
+	display: none;
+}
+
+#baking {
+	display: none;
+}
+#other {
+	display: none;
+}
+
+.cartitem {
+margin: 10px;
+	border-style: solid;
+	border:1px;
+	padding:1px;
+	font-size: 0.7rem;
+	font-family: poppins;
+	text-decoration: none;
+	background-color: white;
+	display: inline;
+
+} 
+
+.row {
+	margin-bottom: 10px;
+}
