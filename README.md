@@ -10,8 +10,8 @@ Fridge2Fork is a web application that suggests recipes to users based on the ing
 
 <img src="screenshots/homescreen.png" width="939" height="426">
 <img src="screenshots/screen2.png" width="932" height="424">
-<img src=screenshots/screen3.png" width="933" height="419">
-<img src=screenshots/screen4.png" width="928" height="384">
+<img src="screenshots/screen3.png" width="933" height="419">
+<img src="screenshots/screen4.png" width="928" height="384">
 
 ## Getting started
 1. Download the project and extract the files to your local environment
