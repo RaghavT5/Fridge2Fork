@@ -4,6 +4,7 @@ Fridge2Fork is a web application that suggests recipes to users based on the ing
 ## Features
 - Search for recipes using the ingredients you have on hand
 - Browse over 150 ingredients and ingredient combinations
+- Thousands of recipes to choose from
 - Recipes sourced from the Spoonacular API
 
 ## Screenshots
